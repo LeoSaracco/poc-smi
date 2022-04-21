@@ -9,7 +9,11 @@
 	<properties>
 		<org.springframework.version>5.2.8.RELEASE</org.springframework.version>
 		<junit.version>4.13.1</junit.version>
+		<org.apache.taglibs.version>1.2.5</org.apache.taglibs.version>
 		<javax.servlet-api.version>2.5</javax.servlet-api.version>
+		<javax.servlet.jsp.jstl.version>1.2.1</javax.servlet.jsp.jstl.version>
+		<javax.validation.api.version>2.0.1.Final</javax.validation.api.version>
+		<hibernate-validator.version>6.0.9.Final</hibernate-validator.version>
 	</properties>
 	<build>
 		<plugins>
@@ -55,21 +59,27 @@
 			<version>${javax.servlet-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
 		<dependency>
 			<groupId>javax.servlet.jsp.jstl</groupId>
 			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
-			<version>1.2.1</version>
+			<version>${javax.servlet.jsp.jstl.version}</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
 		<dependency>
 			<groupId>org.apache.taglibs</groupId>
 			<artifactId>taglibs-standard-impl</artifactId>
-			<version>1.2.5</version>
+			<version>${org.apache.taglibs.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${javax.validation.api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate-validator.version}</version>
+		</dependency>
 
 	</dependencies>
 </project>
