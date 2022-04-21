@@ -14,6 +14,9 @@
 		<javax.servlet.jsp.jstl.version>1.2.1</javax.servlet.jsp.jstl.version>
 		<javax.validation.api.version>2.0.1.Final</javax.validation.api.version>
 		<hibernate-validator.version>6.0.9.Final</hibernate-validator.version>
+		<mysql.version>8.0.28</mysql.version>
+		<hibernate-core.version>5.2.17.Final</hibernate-core.version>
+		<org.springframework.data.version>2.6.4</org.springframework.data.version>
 	</properties>
 	<build>
 		<plugins>
@@ -79,6 +82,21 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate-validator.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${org.springframework.data.version}</version>
 		</dependency>
 
 	</dependencies>
