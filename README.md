@@ -1,17 +1,5 @@
 # poc-smi
-1)
-<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.3</version>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-</plugin>
+1) Agregué <failOnMissingWebXml>false</failOnMissingWebXml> al maven-war-plugin
 
-2) <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>servlet-api</artifactId>
-    <version>2.5</version>
-    <scope>provided</scope>
-</dependency>
+
+2) Agregué dependencia servlet-api 2.5 al pom.xml
